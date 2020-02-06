@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DragonDescription">
+
+    <ImageView
+        android:id="@+id/imDragonImage"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/blackdragon"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvDragonNicknameTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="About Me"
+        android:gravity="center"
+        android:textColor="#fff"
+        app:layout_constraintTop_toBottomOf="@id/imDragonImage"
+        android:background="#000"
+        />
+
+    <TextView
+        android:id="@+id/tvDragonNickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nickname"
+        android:textSize="24sp"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvDragonNicknameTitle"
+        />
+
+
+    <TextView
+        android:id="@+id/tvDragonSubSpecies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subspecies"
+        android:textSize="16sp"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/tvDragonNickname"
+        />
+    <TextView
+        android:id="@+id/tvBreathAttack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nickname"
+        android:textSize="16sp"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvDragonSubSpecies"
+        />
+
+    <TextView
+        android:id="@+id/tvFavoriteFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="FavoriteFood"
+        android:textSize="16sp"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvBreathAttack"
+        />
+    <TextView
+        android:id="@+id/tvAboutDragon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvFavoriteFood"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/CryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="What Do I Sound Like?"
+        android:onClick="DragonCry"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

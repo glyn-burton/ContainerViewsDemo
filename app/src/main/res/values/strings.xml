@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ContainerViewsDemo</string>
+    <string name="dragon_entry_txt">*As of December 2019, visitors are no longer allowed to feed the dragons due to a previous incidents, see \'warnings\' for more info.</string>
+    <string name="dragon_info"> </string>
+</resources>

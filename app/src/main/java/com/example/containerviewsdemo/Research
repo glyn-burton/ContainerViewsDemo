@@ -1,0 +1,24 @@
+1. What is the difference in recyclerView and listView?
+List View is the original container view for android. It frontend loads all of its objects which makes
+it somewhat cumbersome. This is called Eager Loading. It can only do vertical scrolling by default, and
+on upside is that the Listeners don't have to be manually put in.
+Recycle view uses lazy loading, where it only loads what it needs or thinks it will be using, saving loading times
+and memory.It's much newer and being adapted by more companies.
+
+2. Define lazy loading.
+Lazy initialization is used by vals only. Lazy initialization requires that the initialization code is
+supplied, but not defined. It will initialize the val when its needed, and after that it can't be changed.
+
+3. What is an item decorator in RecyclerViews?
+An item decorater is a fancy graphic that gets rendered in with each item, like a divider. It can be used
+to provide more visual feedback and clarity.
+
+
+4. What is the View Holder Pattern?
+The ViewHolder design pattern allows you to access items without constantly needing to look them up, avoiding
+multiple findViewById() calls which can be memory intensive.,
+
+5. How do you implement a item touch helper for the RecyclerView?
+You need to create two interfaces, one that is an adapter.
+Then you need a callback as well. This will allow you to react to user input.
+You also need to override a few methods that control movement.
